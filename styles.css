@@ -1,0 +1,147 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+    color: black;
+    font-weight: 600;
+    padding-top: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Afacad', sans-serif;
+    font-size: 12px;
+    margin-top: -10px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+h3 {
+font-family: 'Afacad', sans-serif;
+    font-size: 11px;
+    margin-bottom: -15px;
+    text-align: center;
+}
+
+h4 {
+   font-family: 'Afacad', sans-serif;
+    font-size: 11px;
+    margin-bottom: -8px;
+    text-align: center;
+
+}
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+font-family: 'Afacad', sans-serif;
+    font-size: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    background-color: #7a7a52;
+
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.head img {
+    max-width: 600px;
+    width: 100%;
+}
+
+figure {
+    align-items: center;
+}
+figcaption {
+    text-align:center;
+    display: flex;
+    align-items: center;
+font-size: 1px;
+
+
+}
+.chart-container {
+    border-style:solid ;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f5eee4;
+    margin: auto;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+    figcaption {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size:8px;
+    margin-right: 57%;
+
+}
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #e0e0d1;
+    font-size: 15px;
+}
+
+h1{
+font-size: ;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
+.chart-container {
+    border-style:solid ;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f5eee4;
+    margin: auto;
+}
+
